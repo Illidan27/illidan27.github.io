@@ -62,6 +62,129 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-软件生命周期模型" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/04/18/软件生命周期模型/" class="article-date">
+  <time datetime="2019-04-18T14:49:32.000Z" itemprop="datePublished">2019-04-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/04/18/软件生命周期模型/">软件生命周期模型</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>1. 简述瀑布模型、增量模型、螺旋模型（含原型方法），并分析优缺点。从项目特点、风险特征、人力资源利用角度思考</strong></p>
+<p><strong>瀑布模型：</strong></p>
+<p>　　瀑布模型将软件生命周期分为需求分析、设计、实现、验证、维护五个阶段，每个阶段按顺序执行，完成了一个阶段后随即进入下一个阶段。</p>
+<p>优点：</p>
+<ul>
+<li><p>降低软件开发的复杂程度，提高软件开发过程的可管理性。</p>
+</li>
+<li><p>强调分析和设计的重要性</p>
+</li>
+<li><p>以阶段成果评估产品，保证阶段之间的正确衔接，使最终产品的质量得到保证。</p>
+</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li><p>阶段的线性顺序缺乏灵活性，无法进行阶段回溯。</p>
+</li>
+<li><p>难以控制风险</p>
+</li>
+<li><p>瀑布模型中的软件活动是以文档驱动的，当文档过多时，工作量也随之增加；以文档来评估项目进度的管理人员也容易产生错误判断。</p>
+</li>
+<li><p>容易造成项目延期、不可控</p>
+</li>
+</ul>
+<p><strong>增量模型：</strong></p>
+<p>　　增量模型首先对系统最核心或最清晰的需求进行分析、设计、实现、 测试并集成到系统中，再按优先级逐步实现后续需求。</p>
+<p>优点：</p>
+<ul>
+<li>保证系统最核心的功能，降低系统失败的风险，提高系统可靠性、稳定性、可维护性</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li><p>难以准确界定系统核心</p>
+</li>
+<li><p>难以选定增量的粒度</p>
+</li>
+</ul>
+<p><strong>螺旋模型：</strong></p>
+<p>　　螺旋模型结合了瀑布模型和快速原型方法，是风险驱动的迭代过程。在多个迭代过程中，实现瀑布模型的多个阶段，但每一次迭代只包含一个或两个阶段</p>
+<p>优点：</p>
+<ul>
+<li><p>强调可选方案和约束条件从而支持软件的重用，有助于将软件质量作为特殊目标融入产品 开发之中</p>
+</li>
+<li><p>引入了明确的风险管理机制，降低项目风险</p>
+</li>
+<li><p>能有效应对需求功能复杂、开发周期长、用户需求经常变化等问题</p>
+</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>风险分析需要花费较大的成本，且错误的风险分析会带来更大的风险</li>
+<li>难以确定迭代次数，无法确定发布日期</li>
+<li>不适用于大规模团队运作</li>
+</ul>
+<p><strong>2. 简述统一过程三大特点，与面向对象的方法有什么关系？</strong></p>
+<p>统一过程的三大特点：</p>
+<ul>
+<li><p>具有伸缩性：只需要使用对当前项目有效的过程，而不需要使用整个框架的每个过程</p>
+</li>
+<li><p>有效性：统一过程在很多大项目里被证明是有效的</p>
+</li>
+<li><p>提高生产效率：提供了可能已经使用过的实用方法</p>
+</li>
+</ul>
+<p>与面向对象方法的关系：</p>
+<p>　　统一过程是一个面向对象的程序开发方法论，是面向对象方法的一个应用实例。面向对象分析确定了问题的范围，因此统一过程提供的方法能在不同的情景下具有伸缩性，而面向对象设计提供了分析提出的问题的有效解决方案，因此统一过程具有有效性，能提高生产效率。</p>
+<p><strong>3. 简述统一过程四个阶段的划分准则是什么？每个阶段关键的里程碑是什么？</strong></p>
+<p>　　我认为统一过程的四个阶段划分准则是在每个阶段对统一过程的核心工作流的着重程度。</p>
+<p>　　统一过程的核心工作流为：Business Modeling，Requirements analysis，Design，Implementation，Test and Integration</p>
+<p>　　Inception阶段着重业务建模与需求分析，以此来确定系统的可行性，并给出生命周期目标</p>
+<p>　　Elaboration阶段着重分析设计，给出具体的文件规范，同时进行初始阶段开发实现</p>
+<p>　　Construction阶段的主要工作为开发与测试，在构建阶段末期，尝试进行部署，以得到一个具备雏形的系统</p>
+<p>　　Transition阶段着重于部署，同时进行测试修改，最终得到一个可交付的产品</p>
+<p>里程碑：</p>
+<ul>
+<li><p>Inception：生命周期目标</p>
+</li>
+<li><p>Elaboration：生命周期体系结构</p>
+</li>
+<li><p>Construction：一个具备初始运行能力的系统</p>
+</li>
+<li><p>Transition：一个能交付给客户的具有全部需求功能的系统</p>
+</li>
+</ul>
+<p><strong>4. 软件企业为什么能按固定节奏生产、固定周期发布软件产品？它给企业项目管理带来哪些好处？</strong></p>
+<p>　　软件公司能根据能力成熟度模型集成(CMMI)评估自身的成熟度，确定自己的定位，并以此为依据选择企业的主营软件类型，继而通过软件的规模、稳定程度确定软件生命周期模型。在固定的软件生命周期模型的指导下，软件企业的项目团队只需要根据计划就能按期生产出可交付的软件产品。这样软件企业就能按固定节奏生产、发布软件，并从中有效地控制了软件风险，获得稳定的利润来源。软件生命周期模型还能很好地引导项目管理，为项目管理提供了明确的实施方法和度量规则，大大减轻了项目管理的难度。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://illidan27.github.io/2019/04/18/软件生命周期模型/" data-id="cjumrhm8q0000f8n042fnq0hz" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/系统分析作业/">系统分析作业</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-分析、设计与UML" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/04/02/分析、设计与UML/" class="article-date">
@@ -126,7 +249,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://illidan27.github.io/2019/04/02/分析、设计与UML/" data-id="cjtz82ba1000clsn0hzlpdf0c" class="article-share-link">Share</a>
+      <a data-url="https://illidan27.github.io/2019/04/02/分析、设计与UML/" data-id="cjumrhm900004f8n0eoktvb16" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/系统分析作业/">系统分析作业</a></li></ul>
@@ -242,7 +365,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://illidan27.github.io/2019/03/14/软件的本质与软件工程科学/" data-id="cjtz7qb4u0000lsn0nbe2qii4" class="article-share-link">Share</a>
+      <a data-url="https://illidan27.github.io/2019/03/14/软件的本质与软件工程科学/" data-id="cjumrhm8v0001f8n0nz7lapkx" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/系统分析作业/">系统分析作业</a></li></ul>
@@ -319,7 +442,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://illidan27.github.io/2019/03/11/幽蓝星球的雨季精灵/" data-id="cjtz7qb530003lsn0xgcsws4p" class="article-share-link">Share</a>
+      <a data-url="https://illidan27.github.io/2019/03/11/幽蓝星球的雨季精灵/" data-id="cjumrhm8z0003f8n04mej2te7" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
@@ -374,6 +497,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2019/04/18/软件生命周期模型/">软件生命周期模型</a>
+          </li>
         
           <li>
             <a href="/2019/04/02/分析、设计与UML/">分析、设计与UML</a>
